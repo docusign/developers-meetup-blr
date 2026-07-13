@@ -92,10 +92,10 @@ Follow the procedure to use Agentforce with Docusign Account:
 - [ ] Step 1. Open the agent you just created → click **Agent Actions**
 - [ ] Step 2. Click **New Agent Action**
 - [ ] Step 3. Select **Apex** as the action type
-- [ ] Step 4. Choose the `DocuSignEnvelopeAction` Apex class
+- [ ] Step 4. Choose the `` Apex class
 - [ ] Step 5. Map the input and output parameters as instructed by the facilitator
 - [ ] Step 6. Click **Save**
-- [ ] Step 7. Repeat for any additional actions (e.g. check envelope status)
+- [ ] Step 7. Repeat for any additional actions
 
 ## Configure Agent Topics
 
@@ -123,12 +123,10 @@ Follow the procedure to use Agentforce with Docusign Account:
 ## Test Agentforce
 
 1. Go to **App Launcher** → open the **Agent** or use the **Einstein** icon in the bottom right
-2. Type a prompt such as: `Send a DocuSign envelope to Acme Corp contact`
+2. Type a prompt such as: ``
 3. Confirm the agent identifies the correct action and contact
 4. Approve the action → verify the envelope is sent
 5. Check the contact's email for the DocuSign envelope
-   {% endstep %}
-   {% endstepper %}
 
 ## Troubleshooting
 
