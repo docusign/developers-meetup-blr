@@ -144,4 +144,4 @@ Follow the procedure to use Agentforce with Docusign Account:
 
 ## Next Step
 
-Proceed to [Workflow Builder](../03-Workflow-Builder/Workflow-Builder.md)
+Proceed to [Connecting Claude with Docusign MCP Server](../04-Claude-Docusign-MCP/claude-docusign-mcp.md)
