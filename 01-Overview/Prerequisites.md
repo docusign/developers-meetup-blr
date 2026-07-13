@@ -8,44 +8,28 @@ Complete all setup steps below **before** attending the workshop. Each module as
 
 | System | Type | Notes |
 |--------|------|-------|
-| Docusign | Developer Sandbox | Free at [developer.docusign.com](https://developer.docusign.com) |
-| Salesforce | Developer Org or Sandbox | Free at [developer.salesforce.com](https://developer.salesforce.com) |
+| Docusign | Developer Sandbox | Free at [developer.docusign.com](https://developers.docusign.com) |
 | GitHub | Free account | To clone/fork this repo |
+
+Make sure you are using the **Developer (Sandbox)** environment  and not a production account for all exercises in this workshop.
 
 ---
 
 ## 2. Docusign Setup
 
-- [ ] Sign up for a **Docusign Developer account** at https://developer.docusign.com
-- [ ] Log in to your Docusign sandbox (`account-d.docusign.com`)
-- [ ] Create an **Integrations Key (Client ID)** under Settings > Apps and Keys
-- [ ] Note your **Account ID** (GUID format, found in Settings > Apps and Keys)
-- [ ] Enable **Workflow Builder** in your account (Settings > Workflow Builder)
-- [ ] Enable **Agreement Desk** if available in your sandbox tier
+- [ ] Step 1: Sign up for a **Docusign Developer account** at https://developers.docusign.com.
+- [ ] Step 2: If you already have a Docusign developer account, go to step 4.
+- [ ] Step 3: Check your email inbox for an activation email from Docusign. Click the activation link in the email to verify and activate your account.
+- [ ] Step 4: Log in to your Docusign developer account at [https://admindemo.docusign.com](https://admindemo.docusign.com/)
+- [ ] Step 5: Click on your **profile avatar** at the top-right corner.
+- [ ] Step 6: Select **My Apps & Keys**.
+- [ ] Step 7: Note down the **Account ID** is displayed on the left hand side of the page (8 digit number).
+- [ ] Step 8: Share **Account ID** with the Docusign workshop volunteers before the session begins. This allows the team to provision access and pre-configure the required templates and connectors for your account ahead of the workshop.
+
 
 ---
 
-## 3. Salesforce Setup
-
-- [ ] Provision a **Salesforce Developer Edition** org or sandbox
-- [ ] Enable **Agentforce** in your org (Setup > Agentforce)
-- [ ] Install the **Docusign for Salesforce** managed package
-  - AppExchange listing: https://appexchange.salesforce.com (search "Docusign eSignature")
-- [ ] Configure a **Named Credential** for Docusign API calls
-- [ ] Assign yourself the **Docusign Administrator** permission set
-
----
-
-## 4. Local Development Tools
-
-- [ ] **Git** — https://git-scm.com
-- [ ] **Salesforce CLI (SF CLI)** — https://developer.salesforce.com/tools/salesforcecli
-- [ ] **VS Code** with Salesforce Extension Pack — https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode
-- [ ] A REST client such as **Postman** or **Insomnia** (optional, for API exploration)
-
----
-
-## 5. Clone This Repository
+## 3. Clone This Repository
 
 ```bash
 git clone https://github.com/<your-org>/docusign-developer-workshop.git
@@ -54,13 +38,12 @@ cd docusign-developer-workshop
 
 ---
 
-## 6. Verify Access
+## 4. Verify Access
 
 Before the workshop starts, confirm you can:
 
-1. Log in to your Docusign sandbox and see the dashboard
-2. Log in to your Salesforce org and navigate to Setup
-3. View the Docusign for Salesforce app in the App Launcher
+1. Log in to your Docusign sandbox and access the **Admin** module.
+2. Shared the **Account ID** with the Docusign workshop volunteers.
 
 ---
 
