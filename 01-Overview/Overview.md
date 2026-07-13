@@ -1,4 +1,4 @@
-![docusign-developers-logo](https://raw.githubusercontent.com/docusign/developers-meetup-blr/a271c616b0c6e69da79e90eda7ebea44ca0eed8a/assets/images/01-docusign_developers_lockup_387x50.svg)
+l![docusign-developers-logo](https://raw.githubusercontent.com/docusign/developers-meetup-blr/a271c616b0c6e69da79e90eda7ebea44ca0eed8a/assets/images/01-docusign_developers_lockup_387x50.svg)
 
 # Workshop Overview
 
@@ -13,9 +13,8 @@ By the end of this workshop, you will be able to:
 - Understand the Docusign Intelligent Agreement Management (IAM) and its core products.
 - Integrate Docusign with Salesforce using Agentforce
 - Build automated workflows using Workflow Builder
-- Manage the full agreement lifecycle with Agreement Desk
-- Apply AI-assisted review (AI-AR) to analyze agreement data
-
+- Manage the full agreement lifecycle with Agreement Desk and AI-assisted review (AI-AR)
+- Trigger a workflow using Claude LLM using Docusign MCP server
 ---
 
 ## Workshop Modules
@@ -23,11 +22,10 @@ By the end of this workshop, you will be able to:
 | # | Module | Duration |
 |---|--------|----------|
 | 01 | Overview & Briefing | 5 min |
-| 02 | Docusign + Salesforce Agentforce Integration | 20 min |
-| 03 | Workflow Builder | 10 min |
-| 04 | Agreement Desk | 30 min |
-| 05 | AI-Assisted Review (AI-AR) | 15 min |
-| 06 | Q & A | 10 min|
+| 02 | Docusign + Salesforce Agentforce Integration | 10 min |
+| 03 | Build a workflow using Workflow Builder (Formerly Maestro) and manage agreement lifecycle using Agreement Desk and AI-AR | 25 min |
+| 04 | Import a wofklow in Workflow Builder| 10 min|
+| 05 | Set up Docusign MCP Server with Claude LLM | 20 min |
 
 ---
 
