@@ -20,7 +20,7 @@ You can now create your Integration Key (IK) using Docusign Developer Console.
 ## Flow
 
 ```
-Login Docusign Developer Console
+  Login Docusign Developer Console
         |
         v
   Create Client ID/Integration Key (IK)
