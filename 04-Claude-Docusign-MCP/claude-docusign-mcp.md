@@ -65,4 +65,7 @@ Your Docusign account details are displayed along with the list of available MCP
 
 > Please leave this tab open. We will build the workflow in the next step, and then use Claude to trigger it immediately after.
 
- 
+ ---
+## Next Step
+
+Proceed to [Workflow Builder](../05-Workflow-Builder/Workflow-Builder.md)
