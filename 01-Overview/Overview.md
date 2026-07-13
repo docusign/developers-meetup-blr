@@ -41,16 +41,6 @@ This workshop is intended for:
 
 ---
 
-## Format
-
-Each module includes:
-- **Concept overview** — What the feature does and why it matters
-- **Step-by-step lab** — Hands-on instructions to complete in your sandbox org
-- **Screenshots/diagrams** — Visual aids stored in `../assets/images/`
-- **Reference links** — Additional documentation and resources in `../resources/`
-
----
-
 ## Support
 
 If you run into issues during the workshop:
