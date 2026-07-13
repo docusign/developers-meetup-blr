@@ -1,6 +1,6 @@
 # Workshop Overview
 
-Welcome to the **Docusign Developer Workshop**. This hands-on workshop is designed to help developers understand and build integrations using Docusign's modern agreement platform.
+Welcome to the **Docusign Developer Workshop**. This hands-on workshop is designed to help developers understand and build integrations using Docusign Intelligent Agreement Management (IAM) platform.
 
 ---
 
@@ -8,11 +8,11 @@ Welcome to the **Docusign Developer Workshop**. This hands-on workshop is design
 
 By the end of this workshop, you will be able to:
 
-- Understand the Docusign Agreement Cloud and its core products
+- Understand the Docusign Intelligent Agreement Management (IAM) and its core products.
 - Integrate Docusign with Salesforce using Agentforce
-- Build automated document workflows using Workflow Builder
+- Build automated workflows using Workflow Builder
 - Manage the full agreement lifecycle with Agreement Desk
-- Apply AI-assisted review (AI-AR) to analyze and extract agreement data
+- Apply AI-assisted review (AI-AR) to analyze agreement data
 
 ---
 
@@ -20,11 +20,12 @@ By the end of this workshop, you will be able to:
 
 | # | Module | Duration |
 |---|--------|----------|
-| 01 | Overview & Setup | 15 min |
-| 02 | Docusign + Salesforce Agentforce Integration | 45 min |
-| 03 | Workflow Builder | 30 min |
+| 01 | Overview & Briefing | 5 min |
+| 02 | Docusign + Salesforce Agentforce Integration | 20 min |
+| 03 | Workflow Builder | 10 min |
 | 04 | Agreement Desk | 30 min |
-| 05 | AI-Assisted Review (AI-AR) | 30 min |
+| 05 | AI-Assisted Review (AI-AR) | 15 min |
+| 06 | Q & A | 10 min|
 
 ---
 
@@ -33,6 +34,7 @@ By the end of this workshop, you will be able to:
 This workshop is intended for:
 
 - Salesforce developers and architects
+- Builders implementing Docusign solutions 
 - Integration engineers
 - Technical consultants working with Docusign
 
@@ -44,7 +46,7 @@ Each module includes:
 - **Concept overview** — What the feature does and why it matters
 - **Step-by-step lab** — Hands-on instructions to complete in your sandbox org
 - **Screenshots/diagrams** — Visual aids stored in `../assets/images/`
-- **Reference links** — Additional documentation and resources
+- **Reference links** — Additional documentation and resources in `../resources/`
 
 ---
 
