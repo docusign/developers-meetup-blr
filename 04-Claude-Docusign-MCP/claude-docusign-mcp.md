@@ -37,31 +37,32 @@ As a part of this workshop, we will be setting up a Custom Connector with Claude
 
 # Docusign Developer Console
 
-Follow the procedure to generate Integrtion Key (IK) through Developer Console:
+Follow the procedure to Connect Claude with Docusign MCP Server:
 
-## Login Docusign Developer Console Account
+## Add a Custom Connector
 
-- [ ] Step 1: Go to <https://apps.docusign.com/dev-console/integrations>
-- [ ] Step 2: Enter Email as ```docusigndevelopersworkshop@zohomail.in```
-- [ ] Step 3: Select **Next**
-- [ ] Step 4: Enter password as ```Docusign!```
+- [ ] Step 1: Go to [Claude Web](https://claude.ai/).
+- [ ] Step 2: Open a new chat and select **+**.
+- [ ] Step 3: Select **Add Connector -> ...Add custom connector**
+- [ ] Step 4: Enter a name for the Connector say ```Docusign MCP```
+- [ ] Step 5: Enter **Remote MCP server URL** as ```https://mcp-d.docusign.com/mcp```
+- [ ] Step 6: Enter the **Client ID**
+- [ ] Step 7: Enter the **Client Secret**
+- [ ] Step 8: Select **Add**
 
-## Add an Integration Key (IK)
+## Connect and Authorize Connector
 
-- [ ] Step 1: Select **+ Add**
-- [ ] Step 2: Enter your firstname and lastname as ```firstname.lastname```
-- [ ] Step 3: Select **Create**
-- [ ] Step 4: Note the Client ID (to be used in Claude LLM)
+- [ ] Step 1: Select **Connect**
+- [ ] Step 2: Select **Allow Access** after reviewing the listed scopes of the created connector.
+- [ ] Step 3: Ensure Connector is available under **Add Connector** menu.
 
-## Generate Secret and Set Redirect URI
+## Run a test prompt
 
-- [ ] Step 1: Select **Third-party client ID**
-- [ ] Step 2: Select **+Add** under Client Secret.
-- [ ] Step 3: Note the Client Secret (to be used in Claude LLM)
-- [ ] Step 4: Select **+Add** under Redirect URI.
-- [ ] Step 5: Enter both the urls:
-              https://claude.ai/api/mcp/auth_callback
-              https://claude.com/api/mcp/auth_callback
-- [ ] Step 6: Select **Save**
+- [ ] Step 1: Enter the following prompt: ```List my Docusign account details and list of available tools```
+- [ ] Step 2: Select **Allow Access** (if prompted)
 
- ![Redirect_URI](https://raw.githubusercontent.com/docusign/developers-meetup-blr/refs/heads/main/assets/videos/Add_Redirect_URI.webp)
+Your Docusign account details are displayed along with the list of available MCP tools. 
+
+> Please leave this tab open. We will build the workflow in the next step, and then use Claude to trigger it immediately after.
+
+ 
