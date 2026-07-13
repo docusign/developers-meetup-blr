@@ -24,7 +24,7 @@ By the end of this workshop, you will be able to:
 | 01 | Overview & Briefing | 5 min |
 | 02 | Docusign + Salesforce Agentforce Integration | 10 min |
 | 03 | Build a workflow using Workflow Builder (Formerly Maestro) and manage agreement lifecycle using Agreement Desk and AI-AR | 25 min |
-| 04 | Import a wofklow in Workflow Builder| 10 min|
+| 04 | Import a workflow in Workflow Builder| 10 min|
 | 05 | Set up Docusign MCP Server with Claude LLM | 20 min |
 
 ---
