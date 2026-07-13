@@ -46,9 +46,9 @@ cd docusign-developer-workshop
 
 Before the workshop starts, confirm you can:
 
-1. Log in to your Docusign sandbox and access the **Admin** module.
-2. Log in to your Claude Web UI in browser.
-3. Log in to your Google Drive.
+1. Log in to your [Docusign sandbox](https://admindemo.docusign.com/) and access the **Admin** module.
+2. Log in to your [Claude Web UI](https://claude.ai/) in browser.
+3. Log in to your [Google Drive](https://drive.google.com/drive/).
 4. Shared the **Account ID** with the Docusign workshop volunteers.
 
 ---
