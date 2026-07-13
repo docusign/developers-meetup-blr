@@ -56,3 +56,9 @@ Before the workshop starts, confirm you can:
 ## Need Help?
 
 Contact your workshop facilitator or refer to the [Resources](../resources/Resources.md) page for documentation links.
+
+---
+
+## Next Step
+
+Proceed to [Docusign Salesforce Agentforce](../02-Docusign-Salesforce/Docusign-Agentforce-Integration.md)
