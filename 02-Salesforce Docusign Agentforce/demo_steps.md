@@ -15,10 +15,6 @@
 
 # Demo Video (Without Audio voiceover)
 
-![Docusign Agenforce Video](https://raw.githubusercontent.com/docusign/developers-meetup-blr/refs/heads/main/assets/videos/Docusign-Agentforce-Demo.mp4))
-
-
-
 https://github.com/user-attachments/assets/2397d96a-5172-496c-b8dd-41786b36483e
 
 
