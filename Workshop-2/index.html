@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Docusign Manage, Bengaluru Meetup Workshop</title>
+<style>
+  /* ---- Docusign brand typeface ---- */
+  @font-face{font-family:'DSIndigo';src:url('assets/fonts/DSIndigo-Light.woff2') format('woff2'),url('assets/fonts/DSIndigo-Light.woff') format('woff');font-weight:300;font-style:normal;font-display:swap}
+  @font-face{font-family:'DSIndigo';src:url('assets/fonts/DSIndigo-Medium.woff2') format('woff2'),url('assets/fonts/DSIndigo-Medium.woff') format('woff');font-weight:500;font-style:normal;font-display:swap}
+  @font-face{font-family:'DSIndigo';src:url('assets/fonts/DSIndigo-SemiBold.woff2') format('woff2'),url('assets/fonts/DSIndigo-SemiBold.woff') format('woff');font-weight:600;font-style:normal;font-display:swap}
+
+  :root{
+    --indigo:#4C00FF; --indigo-d:#3a00c2; --coral:#FF5252;
+    --ink:#130032; --ink2:#241452;
+    --lt:#F4F2FA; --line:#e5e1f0; --txt:#1c1433; --muted:#615a75;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'DSIndigo',Arial,Helvetica,sans-serif;color:var(--txt);background:var(--lt);line-height:1;font-weight:300}
+  .util{background:#1a0040}
+  .util .in{max-width:1400px;margin:0 auto;padding:9px 28px;display:flex;justify-content:flex-end;gap:22px;flex-wrap:wrap}
+  .util a{color:#e6e0f5;text-decoration:none;font-size:12.5px}
+  .util a:hover{color:#fff}
+  .nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+  .nav .in{max-width:1400px;margin:0 auto;padding:0 28px;display:flex;align-items:center;gap:26px}
+  .nav .brand{display:flex;align-items:center;padding:14px 0}
+  .nav .brand img{height:24px;display:block}
+  .tabs{display:flex;gap:24px;flex:1;flex-wrap:wrap}
+  .tabs a{position:relative;text-decoration:none;color:var(--ink);font-weight:500;font-size:15px;padding:20px 0}
+  .tabs a:hover{color:var(--indigo)}
+  .tabs a.active{color:var(--indigo);font-weight:600}
+  .tabs a.active:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--indigo)}
+  .nav-cta{background:var(--indigo);color:#fff;text-decoration:none;font-weight:600;font-size:13px;padding:11px 20px;border-radius:8px;white-space:nowrap}
+  .nav-cta:hover{background:var(--indigo-d)}
+  .hero{background:linear-gradient(100deg,#4C00FF 0%,#7A1FD0 42%,#C0207E 72%,#FF5252 100%);color:#fff}
+  .hero .in{max-width:1400px;margin:0 auto;padding:36px 28px 42px}
+  .hero h1{margin:0 0 8px;font-size:28px;font-weight:600}
+  .hero p{margin:0;color:#f3edff;font-size:15px}
+  .wrap{max-width:1400px;margin:0 auto;padding:34px 24px 48px}
+
+  /* four capability frames */
+  .frames{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:0 0 24px}
+  @media(max-width:640px){.frames{grid-template-columns:1fr}}
+  .frame{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 24px;position:relative;overflow:hidden}
+  .frame:before{content:"";position:absolute;top:0;left:0;right:0;height:4px}
+  .frame.f1:before{background:linear-gradient(90deg,#4C00FF,#7A1FD0)}
+  .frame.f2:before{background:linear-gradient(90deg,#C0207E,#FF5252)}
+  .frame.f3:before{background:linear-gradient(90deg,#7A1FD0,#C0207E)}
+  .frame.f4:before{background:linear-gradient(90deg,#FF5252,#ff8c52)}
+  .frame .fnum{font-size:11px;font-weight:700;letter-spacing:.10em;text-transform:uppercase;color:var(--indigo);margin-bottom:6px}
+  .frame.f2 .fnum{color:#C0207E}
+  .frame.f3 .fnum{color:#7A1FD0}
+  .frame.f4 .fnum{color:#d44000}
+  .frame h2{font-size:17px;font-weight:600;color:var(--ink);margin:0 0 12px;line-height:1.3}
+  .frame .why{background:#f7f4ff;border-radius:8px;padding:10px 14px;margin:0 0 14px;font-size:13px;color:var(--ink)}
+  .frame.f2 .why{background:#fff3f3}
+  .frame.f3 .why{background:#f9f3ff}
+  .frame.f4 .why{background:#fff7f3}
+  .frame .why strong{display:block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--indigo);margin-bottom:4px}
+  .frame.f2 .why strong{color:#C0207E}
+  .frame.f3 .why strong{color:#7A1FD0}
+  .frame.f4 .why strong{color:#d44000}
+  .frame p{font-size:13.5px;color:var(--muted);margin:0}
+
+  /* how we get there */
+  .how{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:0 0 28px}
+  .how h3{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  .how-steps{display:flex;flex-wrap:wrap;gap:10px}
+  .how-step{flex:1;min-width:160px;display:flex;align-items:flex-start;gap:10px;background:var(--lt);border-radius:10px;padding:12px 14px}
+  .how-step .dot{flex-shrink:0;width:8px;height:8px;border-radius:50%;margin-top:5px}
+  .how-step.hs1 .dot{background:#4C00FF}
+  .how-step.hs2 .dot{background:#7A1FD0}
+  .how-step.hs3 .dot{background:#C0207E}
+  .how-step.hs4 .dot{background:#FF5252}
+  .how-step strong{display:block;font-size:13px;color:var(--ink);font-weight:600;margin-bottom:2px}
+  .how-step span{font-size:12px;color:var(--muted)}
+
+  /* nav cards */
+  .sec-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:640px){.cards{grid-template-columns:1fr}}
+  .card{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);
+    border-radius:12px;padding:22px;transition:transform .12s ease,box-shadow .12s ease}
+  .card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(76,0,255,.12);border-color:var(--indigo)}
+  .card .k{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--indigo);background:#efe9ff;border-radius:999px;padding:4px 10px;margin-bottom:12px}
+  .card h2{margin:0 0 8px;font-size:19px;color:var(--ink);font-weight:600}
+  .card p{margin:0;font-size:14px;color:var(--muted)}
+  .card .go{margin-top:14px;font-size:14px;font-weight:600;color:var(--indigo)}
+</style>
+</head>
+<body>
+  <div class="util"><div class="in">
+    <a href="https://developers.docusign.com/iam-toolkit/" target="_blank" rel="noopener">Docusign CLI Docs</a>
+    <a href="https://www.npmjs.com/package/@docusign/agreement-cli" target="_blank" rel="noopener">Agreement CLI</a>
+    <a href="https://developers.docusign.com/" target="_blank" rel="noopener">Developer Center</a>
+  </div></div>
+  <nav class="nav"><div class="in">
+    <a class="brand" href="index.html"><img src="assets/img/docusign-horizontal-black.svg" alt="Docusign"></a>
+    <div class="tabs">
+      <a href="index.html" class="active">Overview</a>
+      <a href="2_Hands_on_Flow.html">Hands-on Lab</a>
+    </div>
+    <a class="nav-cta" href="https://www.docusign.com/intelligent-agreement-management" target="_blank" rel="noopener">Docusign IAM ↗</a>
+  </div></nav>
+
+  <div class="hero"><div class="in">
+    <h1>The Anatomy of a Trustworthy Agreement Layer</h1>
+    <p>Four capabilities that turn agreements from documents into infrastructure agents can act on · Bengaluru Meetup Workshop · Docusign IAM</p>
+  </div></div>
+
+  <div class="wrap">
+
+    <div class="frames">
+      <div class="frame f1">
+        <div class="fnum">Capability 1 of 4 · Data</div>
+        <h2>What does the agent actually know?</h2>
+        <div class="why">
+          <strong>The gap every agentic platform hits</strong>
+          The agent reasons well until the generic ends and the agreement begins. Without the actual terms, it applies generic actions to specifically negotiated relationships. Stage 1 and 2 close that gap for Fontara's procurement team.
+        </div>
+        <p>Define procurement agreement types and fields as code, bulk-ingest a pharma-medtech vendor repository with the Docusign CLI, and watch Iris extract renewal dates, payment terms, and liability caps from every PDF.</p>
+      </div>
+      <div class="frame f2">
+        <div class="fnum">Capability 2 of 4 · Integration</div>
+        <h2>Where does the agent plug in?</h2>
+        <div class="why">
+          <strong>The integration pattern that travels</strong>
+          Structured data is inert if it's siloed. The MCP connection you build in Stage 3 is the same pattern that reaches Copilot Studio, Teams, or whatever your customers are already running.
+        </div>
+        <p>Wire the Docusign MCP Server into Copilot Studio and query Fontara's entire vendor corpus in plain English: auto-renewals in 90 days, vendors on off-standard payment terms, MSAs missing a price-increase cap.</p>
+      </div>
+      <div class="frame f3">
+        <div class="fnum">Capability 3 of 4 · Guardrails</div>
+        <h2>Who decides what runs without a human?</h2>
+        <div class="why">
+          <strong>Agentic action without guardrails is liability</strong>
+          Not every agreement decision should fire automatically. Workflow Builder lets you encode exactly which renewals require sign-off before signature — so the agent escalates with full context instead of acting blind.
+        </div>
+        <p>Trigger a pharma supply renewal from one prompt: the agent calculates the deal, routes it through Workflow Builder approval, fires Agreement Prep to the vendor signer, and tracks status back — all without a human touching the toolchain.</p>
+      </div>
+      <div class="frame f4">
+        <div class="fnum">Capability 4 of 4 · Reach</div>
+        <h2>Where does the result go?</h2>
+        <div class="why">
+          <strong>The reusable asset you hand to every client</strong>
+          What you build today is version-controlled, CLI-deployable, and portable across customer accounts. The MCP endpoint it exposes is reachable from Teams, Copilot, or any AI surface your customers are already running.
+        </div>
+        <p>Deploy the prebuilt Procurement Agent in Agent Studio: it surfaces renewals, off-standard terms, and obligations across the vendor corpus, and reaches the teams that act on them through any MCP-compatible AI client.</p>
+      </div>
+    </div>
+
+    <div class="how">
+      <h3>The pattern · ingest once → extract with AI → expose via MCP → deploy agents everywhere</h3>
+      <div class="how-steps">
+        <div class="how-step hs1">
+          <div class="dot"></div>
+          <div><strong>Docusign CLI</strong><span>Defines agreement types as code and bulk-ingests a legacy repository at scale — the foundation everything else runs on.</span></div>
+        </div>
+        <div class="how-step hs2">
+          <div class="dot"></div>
+          <div><strong>Iris AI extraction</strong><span>Turns flat PDFs into structured, queryable intelligence: parties, dates, payment terms, liability caps, clauses.</span></div>
+        </div>
+        <div class="how-step hs3">
+          <div class="dot"></div>
+          <div><strong>Docusign MCP + Copilot Studio</strong><span>Exposes that intelligence to any AI client in plain English, with Workflow Builder routing high-stakes decisions to a human first.</span></div>
+        </div>
+        <div class="how-step hs4">
+          <div class="dot"></div>
+          <div><strong>Agent Studio</strong><span>Ships the whole stack as a Procurement Agent that reaches teams through Teams, Copilot, or any MCP-compatible surface.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="sec-label">Session references</p>
+    <div class="cards">
+      <a class="card" href="2_Hands_on_Flow.html">
+        <span class="k">Lab</span>
+        <h2>Hands-on Lab</h2>
+        <p>Step-by-step: AI extraction → MCP via Copilot Studio → Agent Studio, with copy-paste prompts.</p>
+        <div class="go">Open lab →</div>
+      </a>
+    </div>
+  </div>
+  <div style="position:fixed;bottom:0;right:0;padding:8px 16px;font-size:11px;color:#615a75;background:rgba(255,255,255,0.92);border-top:1px solid #e5e1f0;border-left:1px solid #e5e1f0;border-radius:8px 0 0 0;z-index:99">For questions or feedback: <a href="mailto:amrit.prakash@docusign.com" style="color:#4C00FF;text-decoration:none">amrit.prakash@docusign.com</a></div>
+</body>
+</html>
