@@ -19,3 +19,5 @@
 
 <video src="assets/videos/Docusign-Agentforce-Demo.mp4" width="100%" controls></video>
 
+<video src="assets/videos/Docusign-Agentforce-Demo.mp4" width="100%" controls autoplay loop muted></video>
+
