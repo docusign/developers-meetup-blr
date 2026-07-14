@@ -113,16 +113,27 @@ You will later replace Docusign with the exact URL Suffix from the Salesforce Au
 * Log into Docusign
 * Return to Salesforce without error.
 
-      
+## Create External Credential (Browser Flow)
 
-      
-## Create Apex Classes
+- [ ] Step 1. In **Setup → Named Credentials → External Credentials**, click **New**.
+- [ ] Step 2. Configure:
+* **Label**: DocusignExternalCredential
+* **Name**: DocusignExternalCredential
+* **Authentication Protocol**: OAuth 2.0
+* **Authentication Flow Type**: Browser Flow
+* **Scope**: signature extended aow_manage impersonation (or your chosen scopes)
+* **Authentication Provider**: select the **Docusign** Auth Provider from step 2.
+- [ ] Step 3. Save
 
-- [ ] Step 1. 
-- [ ] Step 2. 
-- [ ] Step 3. 
-- [ ] Step 4. 
-- [ ] Step 5. 
+## Configure Principal
+
+- [ ] Step 1. On the DocusignExternalCredential detail page, scroll to **Principals**.
+- [ ] Step 2. Click **New** and configure:
+* **Parameter Name**: DocusignNamedPrincipal
+* **Identity Type**: Named Principal (org‑wide token) or Per User Principal (per user auth)
+* **Scope**: signature extended aow_manage impersonation
+
+You will authenticate this principal later using Browser Flow. (Important to not miss)
 
 ## Create an Agentforce Agent
 
