@@ -17,3 +17,5 @@
 
 ![Docusign Agenforce Video](https://raw.githubusercontent.com/docusign/developers-meetup-blr/refs/heads/main/assets/videos/Docusign-Agentforce-Demo.mp4))
 
+<video src="assets/videos/Docusign-Agentforce-Demo.mp4" width="100%" controls></video>
+
