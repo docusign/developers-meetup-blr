@@ -50,7 +50,7 @@ Follow the procedure to use Agentforce with Docusign Account:
 - [ ] Step 3. Toggle **Agentforce** to **ON.**
 - [ ] Step 4. Accept any terms and wait for provisioning to complete (if prompted).
   
-## Install the Docusign Salesforce Connector
+## Install the Docusign Salesforce Connector (To view the status of envelopes and agreements from your Docusign account)
 
 - [ ] Step 1. Select **App launcher** (nine dots icons).
 - [ ] Step 2. Select **View All**.
@@ -62,7 +62,7 @@ Follow the procedure to use Agentforce with Docusign Account:
 - [ ] Step 8. Select **Install for All Users** → select **Install.**
 - [ ] Step 9. Approve third-party access if prompted → click **Continue.**
 
-## Configure Docusign Connection
+## Configure Docusign Connection (Sign in your Docusign Account)
 
 - [ ] Step 1. Go to **App Launcher** → search for **Docusign.**
 - [ ] Step 2. Select **Docusign Apps Launcher.**
@@ -70,6 +70,52 @@ Follow the procedure to use Agentforce with Docusign Account:
 - [ ] Step 4. Authorize the Salesforce integration when prompted.
 - [ ] Step 5. Confirm the connection status shows **Connected Account.**
 
+## Create Named Credentials (To allow Agentforce to interact with your Docusign Account-Credentials are stored in encrypted form)
+
+- [ ] Step 1. Log into your **Docusign developer** account.
+- [ ] Step 2. Go to **Admin → Integrations → Apps and Keys**.
+- [ ] Step 3. Click **Add App and Integration Key**.
+- [ ] Step 4. Name the app (e.g., **Salesforce Named Credential**) and **Save**.
+- [ ] Step 5. Copy the **Integration Key (Client ID)**.
+- [ ] Step 6. Under **Actions → Edit → Add** Secret key, generate and copy the Client Secret.
+- [ ] Step 7. Add a **Redirect URI placeholder** (we’ll update it after we have the Salesforce callback):
+
+For sandbox:
+https://test.salesforce.com/services/authcallback/Docusign
+
+For production:
+https://login.salesforce.com/services/authcallback/Docusign
+
+You will later replace Docusign with the exact URL Suffix from the Salesforce Auth Provider.
+
+## Create Salesforce Auth Provider (OpenID Connect)
+
+- [ ] Step 1. In **Salesforce Setup**, search for **Auth. Providers**.
+- [ ] Step 2. Click **New**, select **Open ID Connect**.
+- [ ] Step 3. Fill in:
+* **Name**: Docusign
+* **URL Suffix**: Docusign
+* **Consumer Key**: your Integration Key
+* **Consumer Secret**: your Client Secret
+* **Authorize Endpoint URL (demo)**: https://account-d.docusign.com/oauth/auth
+* **Token Endpoint URL (demo)**: https://account-d.docusign.com/oauth/token
+* **User Info Endpoint URL (demo)**: https://account-d.docusign.com/oauth/userinfo
+* Default Scopes: e.g.signature extended aow_manage impersonation            
+- [ ] Step 4. Check:
+* **Send access token in header**
+* **Include Consumer Secret in API Responses**
+- [ ] Step 5. **Save** the Auth Provider.
+- [ ] Step 6: Copy the generated **Callback URL**.
+- [ ] Step 7: Go back to **Docusign Admin → Apps and Keys → your app → Edit:**
+* Replace the placeholder redirect URI with this **Callback URL**.
+* **Save**.
+- [ ] Step 8: From the Auth Provider detail page, click **Test‑Only Initialization URL** and confirm you can:
+* Log into Docusign
+* Return to Salesforce without error.
+
+      
+
+      
 ## Create Apex Classes
 
 - [ ] Step 1. 
