@@ -50,7 +50,9 @@ Follow the procedure to use Agentforce with Docusign Account:
 - [ ] Step 3. Toggle **Agentforce** to **ON.**
 - [ ] Step 4. Accept any terms and wait for provisioning to complete (if prompted).
   
-## Install the Docusign Salesforce Connector (To view the status of envelopes and agreements from your Docusign account)
+## Install the Docusign Salesforce Connector 
+
+To view the status of envelopes and agreements from your Docusign account
 
 - [ ] Step 1. Select **App launcher** (nine dots icons).
 - [ ] Step 2. Select **View All**.
@@ -62,7 +64,9 @@ Follow the procedure to use Agentforce with Docusign Account:
 - [ ] Step 8. Select **Install for All Users** → select **Install.**
 - [ ] Step 9. Approve third-party access if prompted → click **Continue.**
 
-## Configure Docusign Connection (Sign in your Docusign Account)
+## Configure Docusign Connection 
+
+Sign in your Docusign Account
 
 - [ ] Step 1. Go to **App Launcher** → search for **Docusign.**
 - [ ] Step 2. Select **Docusign Apps Launcher.**
@@ -70,7 +74,9 @@ Follow the procedure to use Agentforce with Docusign Account:
 - [ ] Step 4. Authorize the Salesforce integration when prompted.
 - [ ] Step 5. Confirm the connection status shows **Connected Account.**
 
-## Create Named Credentials (To allow Agentforce to interact with your Docusign Account-Credentials are stored in encrypted form)
+## Create Named Credentials 
+
+To allow Agentforce to interact with your Docusign Account-Credentials are stored in encrypted form
 
 - [ ] Step 1. Log into your **Docusign developer** account.
 - [ ] Step 2. Go to **Admin → Integrations → Apps and Keys**.
@@ -134,6 +140,81 @@ You will later replace Docusign with the exact URL Suffix from the Salesforce Au
 * **Scope**: signature extended aow_manage impersonation
 
 You will authenticate this principal later using Browser Flow. (Important to not miss)
+
+## Permission Set for principal access
+
+- [ ] Step 1: Go to **Setup → Permission Sets → New**.
+- [ ] Step 2: Name it, e.g. **Docusign_External_Credential_Access**.
+- [ ] Step 3: Save.
+- [ ] Step 4: Inside the permission set, open **External Credential Principal Access**.
+- [ ] Step 5: Click **Edit** and move **DocusignNamedPrincipal** (under DocusignExternalCredential) from **Available** to **Enabled**.
+- [ ] Step 6: Save.
+- [ ] Step 7: Assign this permission set to any user who will make Docusign callouts (including yourself).
+
+## Named Credential for Docusign REST API
+
+- [ ] Step 1: In **Setup → Named Credentials → Named Credentials**, click **New**.
+- [ ] Step 2: Configure:
+* **Label**: Docusign API
+* **Name**: DocusignAPI
+(this exact string is used in Apex as callout:DocusignAPI/...)
+* **URL (demo eSignature REST)**:
+https://demo.docusign.net/restapi/v2.1
+* **External Credential**: DocusignExternalCredential
+* Other fields can stay default unless you have specific needs (no additional auth here; it comes from the External Credential).
+- [ ] Step 3: Save
+
+Now Salesforce understands that calls to ```callout:DocusignAPI/...``` should use the Browser Flow External Credential to obtain and refresh tokens.
+
+## Authenticate the External Credential (Browser Flow)
+
+This must be done **once per user/principal**.
+
+- [ ] Step 1: Make sure the user has the permission set from step 4.
+- [ ] Step 2: In **Setup → Named Credentials → External Credentials → DocusignExternalCredential**, find **DocusignNamedPrincipal**.
+- [ ] Step 3: Use **Authenticate / Authorize** on that principal (if available):
+* A browser popup opens.
+* Log into Docusign as the user for this integration.
+* Approve consent.
+* The popup closes and Salesforce stores the token/refresh token.
+
+If you don’t see an **Authenticate** button on the principal:
+
+* Open **Named Credentials → DocusignAPI** and look for an **Authenticate** button there.
+* Complete the same Browser Flow.
+
+Make sure pop‑ups are allowed for your Salesforce domain.
+
+## 
+
+- [ ] Step 1: 
+- [ ] Step 2: 
+- [ ] Step 3:
+- [ ] Step 4:
+- [ ] Step 5:
+- [ ] Step 6:
+- [ ] Step 7:
+
+## 
+
+- [ ] Step 1: 
+- [ ] Step 2: 
+- [ ] Step 3:
+- [ ] Step 4:
+- [ ] Step 5:
+- [ ] Step 6:
+- [ ] Step 7:
+
+## 
+
+- [ ] Step 1: 
+- [ ] Step 2: 
+- [ ] Step 3:
+- [ ] Step 4:
+- [ ] Step 5:
+- [ ] Step 6:
+- [ ] Step 7:
+
 
 ## Create an Agentforce Agent
 
