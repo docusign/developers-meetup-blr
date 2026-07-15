@@ -25,7 +25,7 @@ This module covers building automated agreement workflows using Docusign's no-co
 2. Go to **Agreements > Workflows**
 3. Select **Create Workflow**
 4. Select **Import Workflow**.
-5. Upload bot the workflow files available in  [`05-Workflow-Builder/exports/`](./05-Workflow-Builder/exports)
+5. Upload bot the workflow files available in  [`05-Workflow-Builder/exports/`](./05-Workflow-Builder/exports/)
 6. Import the file from exports folder.
   * Workflow -1 and workflow-2
 
