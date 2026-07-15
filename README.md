@@ -12,7 +12,7 @@ This repository contains workshop materials from the **Docusign Developers Meetu
 
 ## Workshops
 
-### Workshop 1 — Architect AI-Powered Agreement Automation
+### Workshop 1 Architect AI-Powered Agreement Automation
 
 Use Agentforce and Docusign IAM to automate agreement workflows from your CRM—trigger contract generation from Salesforce, route with Workflow Builder, and apply AI-Assisted Review to reduce manual legal reviews.
 
@@ -32,7 +32,7 @@ Use Agentforce and Docusign IAM to automate agreement workflows from your CRM—
 
 ---
 
-### Workshop 2 — Docusign Manage: From Static PDFs to Agentic Workflows
+### Workshop 2 Docusign Manage: From Static PDFs to Agentic Workflows
 
 A hands-on session designed for cross-functional teams (procurement, finance, legal, operations) and technical builders (developers and architects). It covers transforming static PDF documents into intelligent, agentic workflows using Docusign Manage.
 
