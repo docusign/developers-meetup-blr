@@ -54,7 +54,7 @@ Workshop-1/
 └── resources/
 ```
 
-### Module 01 — Overview
+### Module 01 Overview
 **Files:** `Overview.md`, `Prerequisites.md`
 
 Sets the stage for the full workshop. Covers:
@@ -63,7 +63,7 @@ Sets the stage for the full workshop. Covers:
 
 ---
 
-### Module 02 — Salesforce + Docusign Agentforce
+### Module 02 Salesforce + Docusign Agentforce
 **Files:** `demo_steps.md`
 
 A live demonstration of the Docusign Agent embedded in Salesforce using Agentforce.
@@ -79,7 +79,7 @@ A live demonstration of the Docusign Agent embedded in Salesforce using Agentfor
 
 ---
 
-### Module 03 — Developer Console Setup
+### Module 03 Developer Console Setup
 **Files:** `developer-console.md`
 
 Walks through obtaining a **Client ID (Integration Key)** and **Client Secret** from the Docusign Developer Console required for all API calls.
@@ -96,7 +96,7 @@ Walks through obtaining a **Client ID (Integration Key)** and **Client Secret** 
 
 ---
 
-### Module 04 — Claude + Docusign via MCP
+### Module 04 Claude + Docusign via MCP
 **Files:** `claude-docusign-mcp.md`
 
 Connects **Anthropic's Claude** to Docusign using the **Model Context Protocol (MCP)** server — enabling Claude to send envelopes, trigger workflows, and query account data through natural language.
@@ -117,7 +117,7 @@ Connects **Anthropic's Claude** to Docusign using the **Model Context Protocol (
 
 ---
 
-### Module 05 — Workflow Builder
+### Module 05 Workflow Builder
 **Files:** `Workflow-Builder.md`, `exports/README.md`, `exports/` (JSON templates)
 
 Docusign Workflow Builder is a **visual, no-code platform** for designing automated agreement processes.
