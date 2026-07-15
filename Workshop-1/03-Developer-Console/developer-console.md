@@ -62,8 +62,8 @@ Follow the procedure to generate Integrtion Key (IK) through Developer Console:
 - [ ] Step 3: Note the Client Secret (to be used in Claude LLM)
 - [ ] Step 4: Select **+Add** under Redirect URI.
 - [ ] Step 5: Enter both the urls:
-              https://claude.ai/api/mcp/auth_callback
-              https://claude.com/api/mcp/auth_callback
+* https://claude.ai/api/mcp/auth_callback
+* https://claude.com/api/mcp/auth_callback
 - [ ] Step 6: Select **Save**
 
  ![Redirect_URI](https://raw.githubusercontent.com/docusign/developers-meetup-blr/refs/heads/main/assets/videos/Add_Redirect_URI.webp)
