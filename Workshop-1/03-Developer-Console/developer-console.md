@@ -44,7 +44,7 @@ Follow the procedure to generate Integrtion Key (IK) through Developer Console:
 ## Login Docusign Developer Console Account
 
 - [ ] Step 1: Go to <https://apps.docusign.com/dev-console/integrations>
-- [ ] Step 2: Enter Email as ``````
+- [ ] Step 2: Enter Email as ```docusigndevelopersworkshop@zohomail.in```
 - [ ] Step 3: Select **Next**
 - [ ] Step 4: Enter password as ``````
 
