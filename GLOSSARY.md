@@ -10,8 +10,6 @@ Common terms and definitions used throughout this workshop.
 
 **Agreement Desk** — A Docusign feature that provides a unified workspace for managing and tracking the full lifecycle of agreements.
 
-**AI-AR (AI-Assisted Review)** — Docusign's AI capability that analyzes agreement content, extracts key terms, and flags risks automatically.
-
 **Agentforce** — Salesforce's AI agent platform that allows the creation of autonomous AI agents for business process automation.
 
 **API (Application Programming Interface)** — A set of protocols and tools that allows software systems to communicate with each other.
