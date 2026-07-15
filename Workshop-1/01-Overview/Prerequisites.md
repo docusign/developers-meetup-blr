@@ -13,7 +13,6 @@ Complete all setup steps below **before** attending the workshop. Each module as
 | Docusign | Developer Sandbox | Free at [developer.docusign.com](https://www.docusign.com/developers/sandbox?postActivateUrl=https%3A%2F%2Fdevelopers.docusign.com%2F) |
 | GitHub | Free account | To clone/fork this repo |
 | Claude | Free account | To connect Docusign MCP Server |
-| Google Drive| Free account| To connect a Workflow with Google Drvie|
 
 Make sure you are using the **Developer (Sandbox)** environment  and not a production account for all exercises in this workshop.
 
@@ -48,7 +47,6 @@ Before the workshop starts, confirm you can:
 
 1. Log in to your [Docusign sandbox](https://admindemo.docusign.com/) and access the **Admin** module.
 2. Log in to your [Claude Web UI](https://claude.ai/) in browser.
-3. Log in to your [Google Drive](https://drive.google.com/drive/).
 4. Shared the **Account ID** with the Docusign workshop volunteers.
 
 ---
