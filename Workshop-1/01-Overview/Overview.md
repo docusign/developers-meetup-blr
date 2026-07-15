@@ -25,8 +25,8 @@ By the end of this workshop, you will be able to:
 | 02 | Docusign + Salesforce Agentforce Integration | 10 min |
 | 03 | Docusign Developer Console Get IK, Secret, and set Redirect URI | 10 min |
 | 04 | Set up Docusign MCP Server with Claude using Docusign Developer Account | 10 min |
-| 05 | Build a workflow using Workflow Builder (Formerly Maestro) and Manage agreement lifecycle using Agreement Desk and AI-AR | 20 min |
-| 06 | Call the workflow using Claude and View the Signed Documents in Google Drive| 5 min|
+| 05 | Build a workflow using Workflow Builder (Formerly Maestro) and Manage agreement lifecycle using Agreement Desk | 20 min |
+| 06 | Call the workflow using Claude | 5 min|
 
 ---
 
