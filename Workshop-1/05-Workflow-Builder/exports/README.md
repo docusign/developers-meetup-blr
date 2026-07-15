@@ -6,8 +6,8 @@ This folder contains exported Docusign Workflow Builder files (`.json`) that can
 
 | File | Description | Trigger Type |
 |------|-------------|--------------|
-| `vendor-onboarding-nda.json` | Vendor NDA workflow with conditional signed/declined routing | Web Form |
-| `employee-onboarding-packet.json` | Multi-document employee onboarding with sequential signing | API / Scheduled |
+| `workflow-1-name.zip` | Workflow to receive inputs Claude LLM and send as a request to Agreement Desk | API |
+| `workflow-2-name.zip` | Workflow to pull all the submitted requests in Agreement Desk, add documents, send approvals, and send envelopes for eSign | Events |
 
 ## How to Import
 
