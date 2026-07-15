@@ -66,4 +66,3 @@ Follow the procedure to generate Integrtion Key (IK) through Developer Console:
 * https://claude.com/api/mcp/auth_callback
 - [ ] Step 6: Select **Save**
 
- ![Redirect_URI](https://raw.githubusercontent.com/docusign/developers-meetup-blr/refs/heads/main/assets/videos/Add_Redirect_URI.webp)
