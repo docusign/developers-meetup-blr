@@ -2,7 +2,7 @@
 
 # Workflow Builder
 
-This module covers building automated agreement workflows using Docusign's no-code/low-code **Workflow Builder**.
+This module covers building automated agreement workflows using Docusign's no-code/low-code **Workflow Builder** (Formerly Maestro)
 
 ---
 
