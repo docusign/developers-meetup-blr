@@ -27,8 +27,7 @@ Make sure you are using the **Developer (Sandbox)** environment  and not a produ
 - [ ] Step 5: Click on your **profile avatar** at the top-right corner.
 - [ ] Step 6: Select **My Apps & Keys**.
 - [ ] Step 7: Note down the **Account ID** is displayed on the left hand side of the page (8 digit number).
-- [ ] Step 8: Share **Account ID** with the Docusign workshop volunteers before the session begins. This allows the team to provision access to view Agreement Desk and AI-AR feature in your developer account.
-
+- [ ] Step 8: Share **Account ID** by filling up this [AccountID Form](https://docs.google.com/forms/d/e/1FAIpQLSdhAAxlRUrg9srMc-dIsdsIdayKbydUOAL_nqICBLNPgSpsjA/viewform)
 > Optionally, you can share your email id you used while signing up the Docusign Developer Account.
 
 
