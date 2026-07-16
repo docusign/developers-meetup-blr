@@ -21,15 +21,9 @@ Make sure you are using the **Developer (Sandbox)** environment  and not a produ
 ## 2. Docusign Setup
 
 - [ ] Step 1: Sign up for a **Docusign Developer account** at https://developers.docusign.com.
-- [ ] Step 2: If you already have a Docusign developer account, go to step 4.
-- [ ] Step 3: Check your email inbox for an activation email from Docusign. Click the activation link in the email to verify and activate your account.
-- [ ] Step 4: Log in to your Docusign developer account at [https://admindemo.docusign.com](https://admindemo.docusign.com/)
-- [ ] Step 5: Click on your **profile avatar** at the top-right corner.
-- [ ] Step 6: Select **My Apps & Keys**.
-- [ ] Step 7: Note down the **Account ID** is displayed on the left hand side of the page (8 digit number).
-- [ ] Step 8: Share **Account ID** by filling up this [AccountID Form](https://docs.google.com/forms/d/e/1FAIpQLSdhAAxlRUrg9srMc-dIsdsIdayKbydUOAL_nqICBLNPgSpsjA/viewform)
-> Optionally, you can share your email id you used while signing up the Docusign Developer Account.
+- [ ] Step 2: If you don't have a developer account, you can get a preconfigured account from our volunteers.
 
+> For assistance, you can contact our volunteers.
 
 ---
 
