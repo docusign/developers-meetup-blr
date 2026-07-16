@@ -19,12 +19,12 @@ This module covers building automated agreement workflows using Docusign's no-co
 
 ## Lab Steps
 
-### Step 1 — Turn ON Agreements Desk
+### Step 1 Turn ON Agreements Desk
 1.  Log in to your Docusign Developer Account
 2.  Go to **Agreements > Requests**
 3.  Select **Turn ON Agreement Desk**
 
-### Step 1 — Turn ON Agreements Mange Access
+### Step 2 Turn ON Agreements Mange Access
 1.  Log in to your Docusign Developer Account
 2.  Go to **Admin > Users**
 3.  Select **Actions** on your user id row.
@@ -33,7 +33,8 @@ This module covers building automated agreement workflows using Docusign's no-co
    * **Manage all requests in the account**
    * **Configure Agreement Desk settings**
 6. Select **Save**.
-### Step 1 — Access Workflow Builder
+
+### Step 3  Access Workflow Builder
 
 1. Download the workflow files available in  [`05-Workflow-Builder/exports/`](./exports/)
 2. Log in to your Docusign Developer Account
