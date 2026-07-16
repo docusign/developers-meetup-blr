@@ -318,7 +318,13 @@
       <ul class="sub">
         <li>A <strong>Docusign developer / demo account</strong> with <strong>Docusign CLI (open beta)</strong> access enabled.</li>
         <li>Permissions to configure <strong>Agreement Manager</strong> (agreement types, fields, ingestion) in that account.</li>
-        <li>For Stage 3: a <strong>Microsoft 365 / Copilot Studio</strong> environment where you can create agents and add Model Context Protocol tools. Use your existing environment, or provision a trial via <a href="https://microsoft.github.io/agent-academy/recruit/00-course-setup/" target="_blank" style="color:var(--blue)">Trial Environment Setup, Steps 1–4</a>.</li>
+        <li>For Stage 3: a <strong>Microsoft 365 / Copilot Studio</strong> environment where you can create agents and add Model Context Protocol tools. We have provisioned lab accounts for this session - use the number on the paper provided by a volunteer and replace <strong>X</strong> with your assigned number:
+          <ul style="margin:8px 0 4px;padding-left:20px">
+            <li><strong>Admin account:</strong> <code>LabAdminX@M365x98335187.OnMicrosoft.com</code></li>
+            <li><strong>User account:</strong> <code>LabuserX@M365x48923609.onmicrosoft.com</code></li>
+          </ul>
+          If you have your own Microsoft 365 / Copilot Studio environment, you can use that instead.
+        </li>
       </ul>
 
       <h3 id="prereq-h-3"><input type="checkbox" class="prereq-chk" id="pchk-3" onchange="checkPrereqs()"> 0.4.3 · Download the workshop resources</h3>
@@ -427,14 +433,14 @@
       <div class="cmd"><button class="copy" onclick="cp(this)">Copy</button>docusign agm upload --bypass</div>
       <p class="expect"><b>Expect:</b> CLI walks through each step and confirms fields created, types created, training uploaded. AI training runs asynchronously - extraction results appear in the UI after a few minutes.</p>
 
-      <h3>1.4 · (Skip)Test the customizations <span style="font-size:14px;font-weight:400;color:#615a75;background:#f0edf8;border-radius:4px;padding:2px 8px;margin-left:6px;vertical-align:middle">Informational</span></h3>
+      <h3>1.5 · Test the customizations <span style="font-size:14px;font-weight:400;color:#615a75;background:#f0edf8;border-radius:4px;padding:2px 8px;margin-left:6px;vertical-align:middle">Informational</span></h3>
       <p class="lead" style="margin:0 0 6px">Generate a test template pre-filled with what Iris actually extracted, then compare against known ground-truth values to validate extraction accuracy before promoting to production.</p>
       <div class="cmd"><button class="copy" onclick="cp(this)">Copy</button>docusign agm test generate-test-template --prefill-extractions</div>
       <p class="lead" style="margin:8px 0 6px">Edit the generated template to set expected (ground-truth) values, then score accuracy:</p>
       <div class="cmd"><button class="copy" onclick="cp(this)">Copy</button>docusign agm test run</div>
       <p class="expect"><b>Expect:</b> a pass/fail comparison of extracted vs. expected values per field. Use this to tune your manifest before promoting to production.</p>
 
-      <h3>1.5 · Bulk-ingest the Pharma/Medtech contract set</h3>
+      <h3>1.4 · Bulk-ingest the Pharma/Medtech contract set</h3>
       <p class="lead" style="margin:0 0 6px">Ingest 4 real-world-style pharma contracts at once - the "entire legacy repository, not one file at a time" moment. Go back to the repo root first.</p>
       <div class="cmd"><button class="copy" onclick="cp(this)">Copy</button>cd ..</div>
       <p class="lead" style="margin:8px 0 6px">Preview what will be uploaded without ingesting:</p>
