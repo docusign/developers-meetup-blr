@@ -34,7 +34,21 @@ This module covers building automated agreement workflows using Docusign's no-co
    * **Configure Agreement Desk settings**
 6. Select **Save**.
 
-### Step 3  Access Workflow Builder
+### Step 3 Add your email as a user (Applicable only for the test accounts)
+
+1.  Log in to your Docusign Developer Account
+2.  Go to **Admin > Users**
+3.  Select **Add User**
+4.  Type your **Email Address**.
+   > Ensure you have access to this email address to receive approval and signer emails from Docusign.
+6.  Select **Next**.
+7.  Enter your personal details.
+8.  Select **Next**.
+9.  Skip the Access Code section and select **Next**.
+10. Select **DS Admin** as **Permission Profile**.
+11. Select **Add User**.
+
+### Step 4  Access Workflow Builder
 
 1. Download the workflow files available in  [`05-Workflow-Builder/exports/`](./exports/)
 2. Log in to your Docusign Developer Account
