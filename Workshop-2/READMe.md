@@ -1,3 +1,6 @@
+**Very important: Access https://docusign.github.io/developers-meetup-blr/Workshop-2/2_Hands_on_Flow.html**
+
+
 # Docusign Manage: From Static PDFs to Agentic Workflows
 
 Reference pages for the **Bengaluru Meetup Workshop**.
