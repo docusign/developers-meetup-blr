@@ -10,7 +10,7 @@ Complete all setup steps below **before** attending the workshop. Each module as
 
 | System | Type | Notes |
 |--------|------|-------|
-| Docusign | Developer Sandbox | Free at [developer.docusign.com](https://www.docusign.com/developers/sandbox?postActivateUrl=https%3A%2F%2Fdevelopers.docusign.com%2F) |
+| Docusign | Developer Account | Free at [developer.docusign.com](https://www.docusign.com/developers/sandbox?postActivateUrl=https%3A%2F%2Fdevelopers.docusign.com%2F) |
 | GitHub | Free account | To clone/fork this repo |
 | Claude | Free account | To connect Docusign MCP Server |
 
