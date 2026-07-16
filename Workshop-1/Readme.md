@@ -6,7 +6,7 @@
 
 ## Overview
 
-This workshop introduces developers to Docusign's **Intelligent Agreement Management** platform through a structured, progressive set of hands-on modules. Participants configure real integrations from setting up a Developer Console and connecting Claude via MCP, to building automated workflows in approximately **70 minutes**.
+Workshop-1 provides developers with a introduction to Docusign's Intelligent Agreement Management platform. Progressive modules guide participants through configuring real-world integrations starting with the Developer Console, connecting Claude via the Model Context Protocol (MCP), and building the automated workflows through Workflow Builder.
 
 ---
 
@@ -27,7 +27,7 @@ Before the session, ensure you have the following accounts set up and verified:
 
 | Requirement | Details |
 |-------------|---------|
-| **Docusign Developer Sandbox** | Free account at [Docusign Developer Account](https://www.docusign.com/developers/sandbox?postActivateUrl=https%3A%2F%2Fdevelopers.docusign.com%2F) |
+| **Docusign Developer Account** | Free account at [Docusign Developer Account](https://www.docusign.com/developers/sandbox?postActivateUrl=https%3A%2F%2Fdevelopers.docusign.com%2F) |
 | **GitHub** | Access to this repository |
 | **Claude (Anthropic)** | Access to [claude.ai](https://claude.ai) |
 
@@ -35,7 +35,7 @@ Before the session, ensure you have the following accounts set up and verified:
 1. Create all accounts and verify your email addresses
 2. Locate your **8-digit Docusign Account ID** from your Docusign profile settings
 3. Share your Account ID with a workshop volunteer before the session begins
-4. Confirm you can log into all three platforms
+4. Confirm you can log into all three platforms (Docusign developer account, Github, and Claude)
 
 > See [`01-Overview/Prerequisites.md`](./01-Overview/Prerequisites.md) for detailed setup instructions.
 

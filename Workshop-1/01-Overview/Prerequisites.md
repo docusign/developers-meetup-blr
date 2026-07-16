@@ -59,4 +59,4 @@ Contact your workshop facilitator or refer to the [Resources](../resources/Resou
 
 ## Next Step
 
-Proceed to [Docusign Salesforce Agentforce](../02-Docusign-Salesforce/Docusign-Agentforce-Integration.md)
+Proceed to [Docusign Salesforce Agentforce](../02-Salesforce%20Docusign%20Agentforce/demo_steps.md)
